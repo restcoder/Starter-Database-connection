@@ -6,7 +6,7 @@ var app = express();
 var pg = require('pg');
 
 app.get("/products", function (req, res, next) {
-  pg.connect(process.env.POSTGRES_URL, function(err, client, done) {
+  pg.connect(process.env.POSTGRES_URL, function (err, client, done) {
     if (err) {
       return next(err);
     }
@@ -21,6 +21,6 @@ app.get("/products", function (req, res, next) {
 });
 
 app.listen(process.env.PORT, function () {
-    //Keep this line, otherwise your app will fail testing
-    console.log('READY');
+  console.log('Listening on', process.env.PORT);
+  console.log('READY');
 });
