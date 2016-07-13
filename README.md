@@ -4,7 +4,7 @@
 - ruby ✓
 - python ✓
 - java ✓
-- .net ✗
+- .net ✓
 
 All solutions are ready to submit.  
 You can just run `$ restcoder submit`.  
